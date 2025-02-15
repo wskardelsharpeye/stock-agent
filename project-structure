@@ -1,0 +1,33 @@
+stock-market-ai-agent/
+├── docs/
+│   ├── architecture.md
+│   ├── api-docs.md
+│   └── development-guide.md
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── stockai/
+│   │   │           ├── StockMarketAiApplication.java
+│   │   │           ├── domain/
+│   │   │           │   ├── model/
+│   │   │           │   ├── service/
+│   │   │           │   ├── event/
+│   │   │           │   └── repository/
+│   │   │           ├── application/
+│   │   │           │   ├── service/
+│   │   │           │   ├── dto/
+│   │   │           │   └── command/
+│   │   │           ├── infrastructure/
+│   │   │           │   ├── config/
+│   │   │           │   ├── persistence/
+│   │   │           │   ├── messaging/
+│   │   │           │   └── external/
+│   │   │           └── interfaces/
+│   │   │               ├── rest/
+│   │   │               ├── websocket/
+│   │   │               └── scheduler/
+│   │   └── resources/
+│   │       └── application.yml
+│   └── test/
+└── pom.xml 
