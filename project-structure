@@ -1,33 +1,30 @@
 stock-market-ai-agent/
+├── stock-domain/                          # 领域模块
+│   └── src/main/java/com/stockai/domain/
+│       ├── model/
+│       │   └── StockData.java            # 从根目录移动
+│       └── repository/
+│           └── StockRepository.java       # 从根目录移动
+├── stock-application/                     # 应用服务模块
+│   └── src/main/java/com/stockai/application/
+│       └── service/
+│           ├── StockService.java         # 从根目录移动
+│           └── AnalysisService.java      # 从根目录移动
+├── stock-infrastructure/                  # 基础设施模块
+│   └── src/main/java/com/stockai/infrastructure/
+│       ├── external/
+│       │   ├── AlphaVantageClient.java   # 从根目录移动
+│       │   └── AlphaVantageResponse.java # 从根目录移动
+│       └── persistence/
+│           └── repository/
+│               ├── StockRepositoryImpl.java
+│               └── JpaStockRepository.java
+├── stock-interfaces/                      # 接口模块
+│   └── src/main/java/com/stockai/
+│       └── StockMarketAiApplication.java  # 从根目录移动
+├── stock-common/                          # 公共模块
+│   └── src/main/java/com/stockai/common/
+│       └── util/
+│           └── DateTimeUtil.java
 ├── docs/
-│   ├── architecture.md
-│   ├── api-docs.md
-│   └── development-guide.md
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── stockai/
-│   │   │           ├── StockMarketAiApplication.java
-│   │   │           ├── domain/
-│   │   │           │   ├── model/
-│   │   │           │   ├── service/
-│   │   │           │   ├── event/
-│   │   │           │   └── repository/
-│   │   │           ├── application/
-│   │   │           │   ├── service/
-│   │   │           │   ├── dto/
-│   │   │           │   └── command/
-│   │   │           ├── infrastructure/
-│   │   │           │   ├── config/
-│   │   │           │   ├── persistence/
-│   │   │           │   ├── messaging/
-│   │   │           │   └── external/
-│   │   │           └── interfaces/
-│   │   │               ├── rest/
-│   │   │               ├── websocket/
-│   │   │               └── scheduler/
-│   │   └── resources/
-│   │       └── application.yml
-│   └── test/
 └── pom.xml 
